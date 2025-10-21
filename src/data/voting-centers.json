@@ -1,0 +1,1180 @@
+[
+  {
+    "arrondissementId": "Yaounde I",
+    "centerId": "vc001",
+    "name": "Centre de Vote Bastos",
+    "coords": [
+      3.8667,
+      11.5167
+    ],
+    "stats": {
+      "totalVotes": 2500,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 1125,
+          "percentage": 45
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 750,
+          "percentage": 30
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 375,
+          "percentage": 15
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 250,
+          "percentage": 10.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Yaounde I",
+    "centerId": "vc002",
+    "name": "Centre de Vote Nlongkak",
+    "coords": [
+      3.88,
+      11.52
+    ],
+    "stats": {
+      "totalVotes": 1800,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 810,
+          "percentage": 45
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 540,
+          "percentage": 30
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 270,
+          "percentage": 15
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 180,
+          "percentage": 10.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Mbankomo",
+    "centerId": "vc003",
+    "name": "Centre de Vote Mbankomo Central",
+    "coords": [
+      3.75,
+      11.45
+    ],
+    "stats": {
+      "totalVotes": 1200,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 780,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 240,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 120,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 60,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Akonolinga",
+    "centerId": "vc004",
+    "name": "Centre de Vote Akonolinga Marché",
+    "coords": [
+      3.7667,
+      12.25
+    ],
+    "stats": {
+      "totalVotes": 950,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 617,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 190,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 95,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 48,
+          "percentage": 5.1
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Nanga-Eboko",
+    "centerId": "vc005",
+    "name": "Centre de Vote Nanga-Eboko Ville",
+    "coords": [
+      4.6833,
+      12.3833
+    ],
+    "stats": {
+      "totalVotes": 1100,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 715,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 220,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 110,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 55,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Douala I",
+    "centerId": "vc006",
+    "name": "Centre de Vote Bonanjo",
+    "coords": [
+      4.0511,
+      9.7073
+    ],
+    "stats": {
+      "totalVotes": 3200,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 1440,
+          "percentage": 45
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 960,
+          "percentage": 30
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 480,
+          "percentage": 15
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 320,
+          "percentage": 10.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Douala I",
+    "centerId": "vc007",
+    "name": "Centre de Vote Akwa",
+    "coords": [
+      4.06,
+      9.71
+    ],
+    "stats": {
+      "totalVotes": 2800,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 1260,
+          "percentage": 45
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 840,
+          "percentage": 30
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 420,
+          "percentage": 15
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 280,
+          "percentage": 10.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Douala VI",
+    "centerId": "vc008",
+    "name": "Centre de Vote Bassa",
+    "coords": [
+      4.1,
+      9.75
+    ],
+    "stats": {
+      "totalVotes": 2100,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 945,
+          "percentage": 45
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 630,
+          "percentage": 30
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 315,
+          "percentage": 15
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 210,
+          "percentage": 10.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Nkolafamba",
+    "centerId": "vc009",
+    "name": "Centre de Vote Nkolafamba",
+    "coords": [
+      4.65,
+      9.9
+    ],
+    "stats": {
+      "totalVotes": 850,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 552,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 170,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 85,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 43,
+          "percentage": 5.1
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Yokadouma",
+    "centerId": "vc010",
+    "name": "Centre de Vote Yokadouma Centre",
+    "coords": [
+      3.5167,
+      15.05
+    ],
+    "stats": {
+      "totalVotes": 1450,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 942,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 290,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 145,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 73,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Mouloundou",
+    "centerId": "vc011",
+    "name": "Centre de Vote Mouloundou",
+    "coords": [
+      2.0333,
+      15.1833
+    ],
+    "stats": {
+      "totalVotes": 780,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 507,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 156,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 78,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 39,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Bengbis",
+    "centerId": "vc012",
+    "name": "Centre de Vote Bengbis",
+    "coords": [
+      2.75,
+      12.3833
+    ],
+    "stats": {
+      "totalVotes": 920,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 598,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 184,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 92,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 46,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Ambam",
+    "centerId": "vc013",
+    "name": "Centre de Vote Ambam",
+    "coords": [
+      2.3833,
+      11.2667
+    ],
+    "stats": {
+      "totalVotes": 1100,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 715,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 220,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 110,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 55,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Bamenda II",
+    "centerId": "vc014",
+    "name": "Centre de Vote Bamenda Commercial",
+    "coords": [
+      5.9597,
+      10.1591
+    ],
+    "stats": {
+      "totalVotes": 1800,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 810,
+          "percentage": 45
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 540,
+          "percentage": 30
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 270,
+          "percentage": 15
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 180,
+          "percentage": 10.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Fundong",
+    "centerId": "vc015",
+    "name": "Centre de Vote Fundong",
+    "coords": [
+      6.2,
+      10.2667
+    ],
+    "stats": {
+      "totalVotes": 1350,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 337,
+          "percentage": 25
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 472,
+          "percentage": 35
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 405,
+          "percentage": 30
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 136,
+          "percentage": 10.1
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Belo",
+    "centerId": "vc016",
+    "name": "Centre de Vote Belo",
+    "coords": [
+      5.9167,
+      10.15
+    ],
+    "stats": {
+      "totalVotes": 1100,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 275,
+          "percentage": 25
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 385,
+          "percentage": 35
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 330,
+          "percentage": 30
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 110,
+          "percentage": 10.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Mbiame",
+    "centerId": "vc017",
+    "name": "Centre de Vote Mbiame",
+    "coords": [
+      6.15,
+      10.2333
+    ],
+    "stats": {
+      "totalVotes": 950,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 237,
+          "percentage": 25
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 332,
+          "percentage": 35
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 285,
+          "percentage": 30
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 96,
+          "percentage": 10.1
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Mamfe",
+    "centerId": "vc018",
+    "name": "Centre de Vote Mamfe Central",
+    "coords": [
+      5.75,
+      9.3
+    ],
+    "stats": {
+      "totalVotes": 1600,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 400,
+          "percentage": 25
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 560,
+          "percentage": 35
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 480,
+          "percentage": 30
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 160,
+          "percentage": 10.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Nguti",
+    "centerId": "vc019",
+    "name": "Centre de Vote Nguti",
+    "coords": [
+      5.3167,
+      9.4333
+    ],
+    "stats": {
+      "totalVotes": 1250,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 312,
+          "percentage": 25
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 437,
+          "percentage": 35
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 375,
+          "percentage": 30
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 126,
+          "percentage": 10.1
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Mbonge",
+    "centerId": "vc020",
+    "name": "Centre de Vote Mbonge",
+    "coords": [
+      4.9667,
+      9.5667
+    ],
+    "stats": {
+      "totalVotes": 1050,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 262,
+          "percentage": 25
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 367,
+          "percentage": 35
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 315,
+          "percentage": 30
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 106,
+          "percentage": 10.1
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Bafoussam I",
+    "centerId": "vc021",
+    "name": "Centre de Vote Bafoussam Centre",
+    "coords": [
+      5.4781,
+      10.4181
+    ],
+    "stats": {
+      "totalVotes": 2200,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 990,
+          "percentage": 45
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 660,
+          "percentage": 30
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 330,
+          "percentage": 15
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 220,
+          "percentage": 10.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Banganté",
+    "centerId": "vc022",
+    "name": "Centre de Vote Banganté",
+    "coords": [
+      5.15,
+      10.5167
+    ],
+    "stats": {
+      "totalVotes": 1450,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 942,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 290,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 145,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 73,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Fokoué",
+    "centerId": "vc023",
+    "name": "Centre de Vote Fokoué",
+    "coords": [
+      5.45,
+      10.3167
+    ],
+    "stats": {
+      "totalVotes": 1100,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 715,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 220,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 110,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 55,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Mélong",
+    "centerId": "vc024",
+    "name": "Centre de Vote Mélong",
+    "coords": [
+      5.1167,
+      9.9667
+    ],
+    "stats": {
+      "totalVotes": 980,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 637,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 196,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 98,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 49,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Garoua I",
+    "centerId": "vc025",
+    "name": "Centre de Vote Garoua Centre",
+    "coords": [
+      9.3,
+      13.3833
+    ],
+    "stats": {
+      "totalVotes": 2500,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 1625,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 500,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 250,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 125,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrordissementId": "Ngaoundéré I",
+    "centerId": "vc026",
+    "name": "Centre de Vote Ngaoundéré Centre",
+    "coords": [
+      7.3167,
+      13.5833
+    ],
+    "stats": {
+      "totalVotes": 2100,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 1365,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 420,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 210,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 105,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Touboro",
+    "centerId": "vc027",
+    "name": "Centre de Vote Touboro",
+    "coords": [
+      7.6667,
+      15.35
+    ],
+    "stats": {
+      "totalVotes": 890,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 578,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 178,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 89,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 45,
+          "percentage": 5.1
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Maroua I",
+    "centerId": "vc028",
+    "name": "Centre de Vote Maroua Centre",
+    "coords": [
+      10.5833,
+      14.3167
+    ],
+    "stats": {
+      "totalVotes": 2800,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 1820,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 560,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 280,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 140,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Mokolo",
+    "centerId": "vc029",
+    "name": "Centre de Vote Mokolo",
+    "coords": [
+      10.7333,
+      13.8
+    ],
+    "stats": {
+      "totalVotes": 1650,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 1072,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 330,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 165,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 83,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Kaélé",
+    "centerId": "vc030",
+    "name": "Centre de Vote Kaélé",
+    "coords": [
+      10.0833,
+      14.45
+    ],
+    "stats": {
+      "totalVotes": 1420,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 923,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 284,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 142,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 71,
+          "percentage": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "arrondissementId": "Logone-Birni",
+    "centerId": "vc031",
+    "name": "Centre de Vote Logone-Birni",
+    "coords": [
+      11.2667,
+      15.1
+    ],
+    "stats": {
+      "totalVotes": 1100,
+      "candidates": [
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 715,
+          "percentage": 65
+        },
+        {
+          "name": "Issa Tchiroma",
+          "party": "FSNC",
+          "votes": 220,
+          "percentage": 20
+        },
+        {
+          "name": "Joshua Osih",
+          "party": "SDF",
+          "votes": 110,
+          "percentage": 10
+        },
+        {
+          "name": "Cabral Libii",
+          "party": "PCRN",
+          "votes": 55,
+          "percentage": 5.0
+        }
+      ]
+    }
+  }
+]
