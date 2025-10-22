@@ -185,7 +185,8 @@ export default function SelectorPanel({
             </h3>
           </div>
 
-          <div className="!space-y-4 relative">
+          {/* Selectors - Stacked on mobile, Row on large screens */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4! lg:gap-6! relative">
             {/* Region Selector */}
             <SearchableSelect
               label="Region"
@@ -212,15 +213,15 @@ export default function SelectorPanel({
               clearable={true}
             />
 
-            {/* Arrondissement Selector */}
+            {/* Municipality (Arrondissement) Selector */}
             <SearchableSelect
-              label="Arrondissement"
+              label="Municipality"
               options={arrondissementOptions}
               value={selectedArrondissement}
               onChange={onArrondissementChange}
               placeholder={
                 selectedDepartment
-                  ? 'Select an arrondissement...'
+                  ? 'Select a municipality...'
                   : 'Select a department first'
               }
               disabled={!selectedDepartment || isLoading || arrondissementOptions.length === 0}

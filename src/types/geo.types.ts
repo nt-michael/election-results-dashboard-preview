@@ -67,11 +67,11 @@ export const DEFAULT_STYLE: MapStyle = {
 };
 
 export const HIGHLIGHTED_STYLE: MapStyle = {
-  color: '#ff7800',
-  weight: 3,
+  color: '#ff0000',
+  weight: 4,
   opacity: 1,
   fillColor: '#ff7800',
-  fillOpacity: 0.4,
+  fillOpacity: 0.3,
 };
 
 export const HOVER_STYLE: MapStyle = {

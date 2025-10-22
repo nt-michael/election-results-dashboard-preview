@@ -1,9 +1,20 @@
 import { useElection } from './hooks/useElection';
+import { useMemo } from 'react';
 import MapView from './components/MapView';
 import SelectorPanel from './components/SelectorPanel';
 import ResultsDisplay from './components/ResultsDisplay';
 import BreadcrumbNav from './components/BreadcrumbNav';
-import { findParentRegion, findParentDepartment } from './utils/spatialHelpers';
+import AggregateStatsDisplay from './components/AggregateStats';
+import VotingCenterSearch from './components/VotingCenterSearch';
+import type { VotingCenter } from './types/geo.types';
+import { findParentRegion } from './utils/spatialHelpers';
+import { extractArrondissementsFromGeoJSON, extractDepartmentsFromGeoJSON } from './utils/geoDataHelpers';
+import {
+  calculateAggregateStats,
+  getVotingCentersByRegion,
+  getVotingCentersByDepartment,
+  getVotingCentersByArrondissement,
+} from './utils/statisticsHelpers';
 
 function App() {
   const {
@@ -55,20 +66,76 @@ function App() {
     setSelectedArrondissement(null);
   };
 
-  const handleMapArrondissementClick = (arrondissementName: string) => {
-    // Find and set parent department and region
-    const parentDepartment = findParentDepartment(arrondissementName, arrondissementsData ?? undefined, departmentsData ?? undefined);
-    if (parentDepartment) {
-      setSelectedDepartment(parentDepartment);
+  // Municipality is dropdown-only, no map click handler needed
+  const handleMapArrondissementClick = () => {
+    // Municipalities can only be selected via dropdown
+    // Map click is disabled for municipality level
+  };
 
-      // Also find and set parent region
-      const parentRegion = findParentRegion(parentDepartment, departmentsData ?? undefined, regionsData ?? undefined);
-      if (parentRegion) {
-        setSelectedRegion(parentRegion);
+  // Handle voting center search selection
+  const handleVotingCenterSelect = (center: VotingCenter) => {
+    // Set the municipality (arrondissement) for the selected center
+    const municipalityName = center.arrondissementId;
+    setSelectedArrondissement(municipalityName);
+
+    // Find and set parent department
+    const parentDept = findParentRegion(municipalityName, arrondissementsData ?? undefined, departmentsData ?? undefined);
+    if (parentDept) {
+      setSelectedDepartment(parentDept);
+
+      // Find and set parent region
+      const parentReg = findParentRegion(parentDept, departmentsData ?? undefined, regionsData ?? undefined);
+      if (parentReg) {
+        setSelectedRegion(parentReg);
       }
     }
-    setSelectedArrondissement(arrondissementName);
   };
+
+  // Calculate aggregate statistics based on current selection
+  const aggregateStats = useMemo(() => {
+    if (selectedArrondissement) {
+      // Show municipality stats
+      const centersInMunicipality = getVotingCentersByArrondissement(votingCenters, selectedArrondissement);
+      return calculateAggregateStats(centersInMunicipality);
+    } else if (selectedDepartment) {
+      // Show department stats
+      const arrondissementsInDept = extractArrondissementsFromGeoJSON(
+        arrondissementsData ?? undefined,
+        selectedDepartment,
+        departmentsData ?? undefined
+      );
+      const arrondissementNames = arrondissementsInDept.map(a => a.value);
+      const centersInDepartment = getVotingCentersByDepartment(votingCenters, arrondissementNames);
+      return calculateAggregateStats(centersInDepartment);
+    } else if (selectedRegion) {
+      // Show region stats
+      const departmentsInRegion = extractDepartmentsFromGeoJSON(
+        departmentsData ?? undefined,
+        selectedRegion,
+        regionsData ?? undefined
+      );
+      const arrondissementsInRegion: string[] = [];
+      departmentsInRegion.forEach(dept => {
+        const arrs = extractArrondissementsFromGeoJSON(
+          arrondissementsData ?? undefined,
+          dept.value,
+          departmentsData ?? undefined
+        );
+        arrondissementsInRegion.push(...arrs.map(a => a.value));
+      });
+      const centersInRegion = getVotingCentersByRegion(votingCenters, arrondissementsInRegion);
+      return calculateAggregateStats(centersInRegion);
+    }
+    return null;
+  }, [selectedRegion, selectedDepartment, selectedArrondissement, votingCenters, regionsData, departmentsData, arrondissementsData]);
+
+  // Get title for statistics display
+  const statsTitle = useMemo(() => {
+    if (selectedArrondissement) return `${selectedArrondissement} Municipality`;
+    if (selectedDepartment) return `${selectedDepartment} Department`;
+    if (selectedRegion) return `${selectedRegion} Region`;
+    return 'National Statistics';
+  }, [selectedRegion, selectedDepartment, selectedArrondissement]);
 
   // Loading state
   if (isLoading) {
@@ -139,8 +206,8 @@ function App() {
       {/* Main Layout - Responsive: Stacked on mobile, Split on desktop */}
       <div className="flex flex-col lg:flex-row lg:flex-1 lg:overflow-hidden">
         {/* Selector and Results Section - First on mobile, right on desktop */}
-        <div className="w-full lg:w-1/2 lg:flex-1 overflow-x-hidden lg:overflow-y-auto bg-gray-50 dark:bg-gray-900 lg:order-2">
-          <div className="p-4! sm:p-6! pb-12!">
+        <div className="w-full lg:w-1/2 lg:flex-1 lg:overflow-y-auto bg-gray-50 dark:bg-gray-900 lg:order-2">
+          <div className="!p-4 sm:!p-6 !pb-12">
             {/* Selector Panel */}
             <SelectorPanel
               selectedRegion={selectedRegion}
@@ -155,9 +222,34 @@ function App() {
               isLoading={false}
             />
 
-            {/* Results Display */}
+            {/* Voting Center Search */}
+            <div className="mt-4! sm:mt-6!">
+              <VotingCenterSearch
+                votingCenters={votingCenters}
+                onSelectCenter={handleVotingCenterSelect}
+              />
+            </div>
+
+            {/* Aggregate Statistics Display */}
+            {aggregateStats && (selectedRegion || selectedDepartment || selectedArrondissement) && (
+              <div className="mt-4! sm:mt-6!">
+                <AggregateStatsDisplay
+                  stats={aggregateStats}
+                  title={statsTitle}
+                  subtitle={
+                    selectedArrondissement
+                      ? `Electoral results for ${selectedArrondissement} municipality`
+                      : selectedDepartment
+                      ? `Electoral results for ${selectedDepartment} department`
+                      : `Electoral results for ${selectedRegion} region`
+                  }
+                />
+              </div>
+            )}
+
+            {/* Detailed Voting Centers List (only for municipality selection) */}
             {selectedArrondissement && (
-              <div className="mt-4! sm:mt-4!">
+              <div className="mt-4! sm:mt-6!">
                 <ResultsDisplay
                   votingCenters={filteredVotingCenters}
                   selectedArrondissement={selectedArrondissement}

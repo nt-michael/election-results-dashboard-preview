@@ -11,6 +11,7 @@ import {
   HOVER_STYLE,
   type MapStyle,
 } from '../types/geo.types';
+import { getFeatureCentroid } from '../utils/spatialHelpers';
 
 // Fix for default marker icons in react-leaflet
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
@@ -68,13 +69,10 @@ export default function MapView({
   selectedRegion,
   selectedDepartment,
   selectedArrondissement,
-  votingCenters,
   regionsData,
   departmentsData,
-  arrondissementsData,
   onRegionClick,
   onDepartmentClick,
-  onArrondissementClick,
 }: MapViewProps) {
   const [hoveredFeature, setHoveredFeature] = useState<string | null>(null);
   const [mapBounds, setMapBounds] = useState<LatLngBounds | null>(null);
@@ -113,20 +111,6 @@ export default function MapView({
     };
   }, [selectedDepartment, hoveredFeature]);
 
-  // Memoize the style function for arrondissements
-  const getArrondissementStyle = useMemo(() => {
-    return (feature?: Feature): MapStyle => {
-      if (!feature?.properties) return DEFAULT_STYLE;
-
-      const arrondissementName = feature.properties.shapeName;
-      const isSelected = selectedArrondissement === arrondissementName;
-      const isHovered = hoveredFeature === arrondissementName;
-
-      if (isSelected) return HIGHLIGHTED_STYLE;
-      if (isHovered) return HOVER_STYLE;
-      return DEFAULT_STYLE;
-    };
-  }, [selectedArrondissement, hoveredFeature]);
 
   // Event handlers for regions
   const onEachRegion = (feature: Feature, layer: Layer) => {
@@ -182,27 +166,6 @@ export default function MapView({
     }
   };
 
-  // Event handlers for arrondissements
-  const onEachArrondissement = (feature: Feature, layer: Layer) => {
-    const arrondissementName = feature.properties?.shapeName;
-
-    if (arrondissementName) {
-      layer.on({
-        mouseover: () => setHoveredFeature(arrondissementName),
-        mouseout: () => setHoveredFeature(null),
-        click: () => onArrondissementClick?.(arrondissementName),
-      });
-
-      layer.bindTooltip(arrondissementName, {
-        permanent: false,
-        direction: 'center',
-        className: 'bg-gray-800 text-white px-2 py-1 rounded text-sm',
-      });
-    }
-
-    // Don't zoom when arrondissement is selected - maintain department bounds
-    // The map should stay at the department level view
-  };
 
   // Reset bounds when nothing is selected (show whole country)
   useEffect(() => {
@@ -212,19 +175,35 @@ export default function MapView({
   }, [selectedRegion, selectedDepartment, selectedArrondissement]);
 
   // Determine which data to show based on selection hierarchy
-  // CHANGED: Always show regions to maintain map clickability
+  // Map navigation stops at ADM2 (departments) level
   const shouldShowRegions = !selectedRegion;
   const shouldShowDepartments = !!selectedRegion; // Show departments when region is selected
-  const shouldShowArrondissements = !!selectedDepartment; // Show arrondissements when department is selected
-  const shouldShowVotingCenters = !!selectedArrondissement && votingCenters.length > 0;
 
-  // Filter voting centers for the selected arrondissement
-  const filteredVotingCenters = useMemo(() => {
-    if (!selectedArrondissement) return [];
-    return votingCenters.filter(
-      (center) => center.arrondissementId === selectedArrondissement
-    );
-  }, [votingCenters, selectedArrondissement]);
+  // Calculate marker position for selected region or department
+  const markerPosition = useMemo(() => {
+    if (selectedDepartment && departmentsData) {
+      // Find department feature and get its centroid
+      const deptFeatures = (departmentsData as any).features || [];
+      const deptFeature = deptFeatures.find(
+        (f: any) => f.properties?.shapeName === selectedDepartment
+      );
+      if (deptFeature) {
+        const centroid = getFeatureCentroid(deptFeature);
+        if (centroid) return [centroid[1], centroid[0]] as [number, number]; // [lat, lng]
+      }
+    } else if (selectedRegion && regionsData) {
+      // Find region feature and get its centroid
+      const regionFeatures = (regionsData as any).features || [];
+      const regionFeature = regionFeatures.find(
+        (f: any) => f.properties?.shapeName === selectedRegion
+      );
+      if (regionFeature) {
+        const centroid = getFeatureCentroid(regionFeature);
+        if (centroid) return [centroid[1], centroid[0]] as [number, number]; // [lat, lng]
+      }
+    }
+    return null;
+  }, [selectedRegion, selectedDepartment, regionsData, departmentsData]);
 
   return (
     <div className="h-screen">
@@ -256,74 +235,31 @@ export default function MapView({
           />
         )}
 
-        {/* Render departments when region is selected but no department */}
+        {/* Render departments when region is selected */}
         {shouldShowDepartments && departmentsData && (
           <GeoJSON
             key={`departments-${selectedRegion}`}
             data={departmentsData}
             style={getDepartmentStyle}
             onEachFeature={onEachDepartment}
-            filter={(feature) => {
-              console.log(feature);
-              // Filter departments by selected region
-              // This assumes your GeoJSON has a regionId or similar property
-              return true; // Adjust based on your data structure
-            }}
           />
         )}
 
-        {/* Render arrondissements when department is selected */}
-        {shouldShowArrondissements && arrondissementsData && (
-          <GeoJSON
-            key={`arrondissements-${selectedDepartment}`}
-            data={arrondissementsData}
-            style={getArrondissementStyle}
-            onEachFeature={onEachArrondissement}
-            filter={(feature) => {
-              console.log(feature);
-              // Filter arrondissements by selected department
-              // Adjust based on your data structure
-              return true;
-            }}
-          />
+        {/* Marker for selected region or department */}
+        {markerPosition && (
+          <Marker position={markerPosition}>
+            <Popup>
+              <div className="!p-2">
+                <h3 className="font-bold text-base !mb-2">
+                  {selectedDepartment || selectedRegion}
+                </h3>
+                <p className="text-sm text-gray-600">
+                  {selectedDepartment ? 'Department' : 'Region'}
+                </p>
+              </div>
+            </Popup>
+          </Marker>
         )}
-
-        {/* Render voting center markers */}
-        {shouldShowVotingCenters &&
-          filteredVotingCenters.map((center) => (
-            <Marker key={center.centerId} position={center.coords}>
-              <Popup className="min-w-64">
-                <div className="p-2">
-                  <h3 className="font-bold text-base mb-2">{center.name}</h3>
-                  <div className="text-sm mb-2">
-                    <span className="font-semibold">Total Votes:</span>{' '}
-                    {center.stats.totalVotes.toLocaleString()}
-                  </div>
-                  <div className="space-y-1">
-                    {center.stats.candidates.map((candidate, idx) => (
-                      <div key={idx} className="text-sm">
-                        <div className="flex justify-between items-center mb-1">
-                          <span className="font-medium">{candidate.name}</span>
-                          <span className="text-gray-600">
-                            {candidate.percentage.toFixed(1)}%
-                          </span>
-                        </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2">
-                          <div
-                            className="bg-blue-600 h-2 rounded-full"
-                            style={{ width: `${candidate.percentage}%` }}
-                          />
-                        </div>
-                        <div className="text-xs text-gray-500 mt-0.5">
-                          {candidate.party} - {candidate.votes.toLocaleString()} votes
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </Popup>
-            </Marker>
-          ))}
 
         {/* Map controller for handling zoom/pan to selected areas */}
         <MapController
