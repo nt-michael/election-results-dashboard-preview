@@ -131,3 +131,69 @@ export function getArrondissementsInDepartment(
 ): Feature[] {
   return getFeaturesWithinParent(arrondissementsGeoJSON, departmentFeature);
 }
+
+/**
+ * Find parent region for a given department
+ */
+export function findParentRegion(
+  departmentName: string,
+  departmentsGeoJSON?: GeoJsonObject,
+  regionsGeoJSON?: GeoJsonObject
+): string | null {
+  if (!departmentsGeoJSON || departmentsGeoJSON.type !== 'FeatureCollection') return null;
+  if (!regionsGeoJSON || regionsGeoJSON.type !== 'FeatureCollection') return null;
+
+  const departmentCollection = departmentsGeoJSON as FeatureCollection;
+  const regionCollection = regionsGeoJSON as FeatureCollection;
+
+  // Find the department feature
+  const departmentFeature = departmentCollection.features.find(
+    (f) => f.properties?.shapeName === departmentName
+  );
+
+  if (!departmentFeature) return null;
+
+  // Get department's centroid
+  const departmentCentroid = getFeatureCentroid(departmentFeature);
+  if (!departmentCentroid) return null;
+
+  // Find which region contains this department's centroid
+  const parentRegion = regionCollection.features.find((regionFeature) =>
+    isPointInFeature(departmentCentroid, regionFeature)
+  );
+
+  return parentRegion?.properties?.shapeName || null;
+}
+
+/**
+ * Find parent department for a given arrondissement
+ */
+export function findParentDepartment(
+  arrondissementName: string,
+  arrondissementsGeoJSON?: GeoJsonObject,
+  departmentsGeoJSON?: GeoJsonObject
+): string | null {
+  if (!arrondissementsGeoJSON || arrondissementsGeoJSON.type !== 'FeatureCollection') return null;
+  if (!departmentsGeoJSON || departmentsGeoJSON.type !== 'FeatureCollection') return null;
+
+  const arrondissementCollection = arrondissementsGeoJSON as FeatureCollection;
+  const departmentCollection = departmentsGeoJSON as FeatureCollection;
+
+  // Find the arrondissement feature
+  const arrondissementFeature = arrondissementCollection.features.find(
+    (f) => f.properties?.shapeName === arrondissementName
+  );
+
+  if (!arrondissementFeature) return null;
+
+  // Get arrondissement's centroid
+  const arrondissementCentroid = getFeatureCentroid(arrondissementFeature);
+  if (!arrondissementCentroid) return null;
+
+  // Find which department contains this arrondissement's centroid
+  const parentDepartment = departmentCollection.features.find((departmentFeature) =>
+    isPointInFeature(arrondissementCentroid, departmentFeature)
+  );
+
+  return parentDepartment?.properties?.shapeName || null;
+}

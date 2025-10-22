@@ -212,10 +212,11 @@ export default function MapView({
   }, [selectedRegion, selectedDepartment, selectedArrondissement]);
 
   // Determine which data to show based on selection hierarchy
+  // CHANGED: Always show regions to maintain map clickability
   const shouldShowRegions = !selectedRegion;
-  const shouldShowDepartments = selectedRegion && !selectedDepartment;
-  const shouldShowArrondissements = selectedDepartment && !selectedArrondissement;
-  const shouldShowVotingCenters = selectedArrondissement && votingCenters.length > 0;
+  const shouldShowDepartments = !!selectedRegion; // Show departments when region is selected
+  const shouldShowArrondissements = !!selectedDepartment; // Show arrondissements when department is selected
+  const shouldShowVotingCenters = !!selectedArrondissement && votingCenters.length > 0;
 
   // Filter voting centers for the selected arrondissement
   const filteredVotingCenters = useMemo(() => {
@@ -233,9 +234,16 @@ export default function MapView({
         className="h-full w-full"
         scrollWheelZoom={true}
       >
+        {/* Satellite imagery base layer */}
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+          url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+        />
+
+        {/* Labels overlay */}
+        <TileLayer
+          attribution=''
+          url="https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}"
         />
 
         {/* Render regions when no region is selected */}

@@ -11,28 +11,28 @@
       "totalVotes": 2500,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 1125,
-          "percentage": 45
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 750,
-          "percentage": 30
+          "votes": 1375,
+          "percentage": 55
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 625,
+          "percentage": 25
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 375,
-          "percentage": 15
+          "votes": 300,
+          "percentage": 12
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 250,
-          "percentage": 10.0
+          "votes": 200,
+          "percentage": 8.0
         }
       ]
     }
@@ -49,28 +49,28 @@
       "totalVotes": 1800,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 810,
-          "percentage": 45
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 540,
-          "percentage": 30
+          "votes": 990,
+          "percentage": 55
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 450,
+          "percentage": 25
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 270,
-          "percentage": 15
+          "votes": 216,
+          "percentage": 12
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 180,
-          "percentage": 10.0
+          "votes": 144,
+          "percentage": 8.0
         }
       ]
     }
@@ -87,28 +87,28 @@
       "totalVotes": 1200,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 780,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 240,
-          "percentage": 20
+          "votes": 576,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 504,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 120,
-          "percentage": 10
+          "votes": 84,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 60,
-          "percentage": 5.0
+          "votes": 36,
+          "percentage": 3.0
         }
       ]
     }
@@ -125,28 +125,28 @@
       "totalVotes": 950,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 617,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 190,
-          "percentage": 20
+          "votes": 456,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 399,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 95,
-          "percentage": 10
+          "votes": 66,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 48,
-          "percentage": 5.1
+          "votes": 29,
+          "percentage": 3.1
         }
       ]
     }
@@ -163,28 +163,28 @@
       "totalVotes": 1100,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 715,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 220,
-          "percentage": 20
+          "votes": 528,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 462,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 110,
-          "percentage": 10
+          "votes": 77,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 55,
-          "percentage": 5.0
+          "votes": 33,
+          "percentage": 3.0
         }
       ]
     }
@@ -201,28 +201,28 @@
       "totalVotes": 3200,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 1440,
-          "percentage": 45
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 960,
-          "percentage": 30
+          "votes": 1760,
+          "percentage": 55
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 800,
+          "percentage": 25
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 480,
-          "percentage": 15
+          "votes": 384,
+          "percentage": 12
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 320,
-          "percentage": 10.0
+          "votes": 256,
+          "percentage": 8.0
         }
       ]
     }
@@ -239,28 +239,28 @@
       "totalVotes": 2800,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 1260,
-          "percentage": 45
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 840,
-          "percentage": 30
+          "votes": 1540,
+          "percentage": 55
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 700,
+          "percentage": 25
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 420,
-          "percentage": 15
+          "votes": 336,
+          "percentage": 12
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 280,
-          "percentage": 10.0
+          "votes": 224,
+          "percentage": 8.0
         }
       ]
     }
@@ -277,28 +277,28 @@
       "totalVotes": 2100,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 945,
-          "percentage": 45
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 630,
-          "percentage": 30
+          "votes": 1155,
+          "percentage": 55
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 525,
+          "percentage": 25
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 315,
-          "percentage": 15
+          "votes": 252,
+          "percentage": 12
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 210,
-          "percentage": 10.0
+          "votes": 168,
+          "percentage": 8.0
         }
       ]
     }
@@ -315,28 +315,28 @@
       "totalVotes": 850,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 552,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 170,
-          "percentage": 20
+          "votes": 408,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 357,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 85,
-          "percentage": 10
+          "votes": 59,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 43,
-          "percentage": 5.1
+          "votes": 26,
+          "percentage": 3.1
         }
       ]
     }
@@ -353,28 +353,28 @@
       "totalVotes": 1450,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 942,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 290,
-          "percentage": 20
+          "votes": 696,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 609,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 145,
-          "percentage": 10
+          "votes": 101,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 73,
-          "percentage": 5.0
+          "votes": 44,
+          "percentage": 3.0
         }
       ]
     }
@@ -391,28 +391,28 @@
       "totalVotes": 780,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 507,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 156,
-          "percentage": 20
+          "votes": 374,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 327,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 78,
-          "percentage": 10
+          "votes": 54,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 39,
-          "percentage": 5.0
+          "votes": 25,
+          "percentage": 3.2
         }
       ]
     }
@@ -429,28 +429,28 @@
       "totalVotes": 920,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 598,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 184,
-          "percentage": 20
+          "votes": 441,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 386,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 92,
-          "percentage": 10
+          "votes": 64,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 46,
-          "percentage": 5.0
+          "votes": 29,
+          "percentage": 3.2
         }
       ]
     }
@@ -467,28 +467,28 @@
       "totalVotes": 1100,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 715,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 220,
-          "percentage": 20
+          "votes": 528,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 462,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 110,
-          "percentage": 10
+          "votes": 77,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 55,
-          "percentage": 5.0
+          "votes": 33,
+          "percentage": 3.0
         }
       ]
     }
@@ -505,28 +505,28 @@
       "totalVotes": 1800,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 810,
-          "percentage": 45
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 540,
-          "percentage": 30
+          "votes": 990,
+          "percentage": 55
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 450,
+          "percentage": 25
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 270,
-          "percentage": 15
+          "votes": 216,
+          "percentage": 12
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 180,
-          "percentage": 10.0
+          "votes": 144,
+          "percentage": 8.0
         }
       ]
     }
@@ -543,28 +543,28 @@
       "totalVotes": 1350,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 337,
-          "percentage": 25
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 472,
-          "percentage": 35
+          "votes": 810,
+          "percentage": 60
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 270,
+          "percentage": 20
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 405,
-          "percentage": 30
+          "votes": 202,
+          "percentage": 15
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 136,
-          "percentage": 10.1
+          "votes": 68,
+          "percentage": 5.0
         }
       ]
     }
@@ -581,28 +581,28 @@
       "totalVotes": 1100,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 275,
-          "percentage": 25
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 385,
-          "percentage": 35
+          "votes": 660,
+          "percentage": 60
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 220,
+          "percentage": 20
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 330,
-          "percentage": 30
+          "votes": 165,
+          "percentage": 15
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 110,
-          "percentage": 10.0
+          "votes": 55,
+          "percentage": 5.0
         }
       ]
     }
@@ -619,28 +619,28 @@
       "totalVotes": 950,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 237,
-          "percentage": 25
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 332,
-          "percentage": 35
+          "votes": 570,
+          "percentage": 60
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 190,
+          "percentage": 20
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 285,
-          "percentage": 30
+          "votes": 142,
+          "percentage": 15
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 96,
-          "percentage": 10.1
+          "votes": 48,
+          "percentage": 5.1
         }
       ]
     }
@@ -657,28 +657,28 @@
       "totalVotes": 1600,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 400,
-          "percentage": 25
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 560,
-          "percentage": 35
+          "votes": 960,
+          "percentage": 60
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 320,
+          "percentage": 20
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 480,
-          "percentage": 30
+          "votes": 240,
+          "percentage": 15
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 160,
-          "percentage": 10.0
+          "votes": 80,
+          "percentage": 5.0
         }
       ]
     }
@@ -695,28 +695,28 @@
       "totalVotes": 1250,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 312,
-          "percentage": 25
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 437,
-          "percentage": 35
+          "votes": 750,
+          "percentage": 60
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 250,
+          "percentage": 20
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 375,
-          "percentage": 30
+          "votes": 187,
+          "percentage": 15
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 126,
-          "percentage": 10.1
+          "votes": 63,
+          "percentage": 5.0
         }
       ]
     }
@@ -733,28 +733,28 @@
       "totalVotes": 1050,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 262,
-          "percentage": 25
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 367,
-          "percentage": 35
+          "votes": 630,
+          "percentage": 60
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 210,
+          "percentage": 20
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 315,
-          "percentage": 30
+          "votes": 157,
+          "percentage": 15
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 106,
-          "percentage": 10.1
+          "votes": 53,
+          "percentage": 5.0
         }
       ]
     }
@@ -771,28 +771,28 @@
       "totalVotes": 2200,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 990,
-          "percentage": 45
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 660,
-          "percentage": 30
+          "votes": 1210,
+          "percentage": 55
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 550,
+          "percentage": 25
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 330,
-          "percentage": 15
+          "votes": 264,
+          "percentage": 12
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 220,
-          "percentage": 10.0
+          "votes": 176,
+          "percentage": 8.0
         }
       ]
     }
@@ -809,28 +809,28 @@
       "totalVotes": 1450,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 942,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 290,
-          "percentage": 20
+          "votes": 696,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 609,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 145,
-          "percentage": 10
+          "votes": 101,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 73,
-          "percentage": 5.0
+          "votes": 44,
+          "percentage": 3.0
         }
       ]
     }
@@ -847,28 +847,28 @@
       "totalVotes": 1100,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 715,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 220,
-          "percentage": 20
+          "votes": 528,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 462,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 110,
-          "percentage": 10
+          "votes": 77,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 55,
-          "percentage": 5.0
+          "votes": 33,
+          "percentage": 3.0
         }
       ]
     }
@@ -885,28 +885,28 @@
       "totalVotes": 980,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 637,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 196,
-          "percentage": 20
+          "votes": 470,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 411,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 98,
-          "percentage": 10
+          "votes": 68,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 49,
-          "percentage": 5.0
+          "votes": 31,
+          "percentage": 3.2
         }
       ]
     }
@@ -923,28 +923,28 @@
       "totalVotes": 2500,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 1625,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 500,
-          "percentage": 20
+          "votes": 1200,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 1050,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 250,
-          "percentage": 10
+          "votes": 175,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 125,
-          "percentage": 5.0
+          "votes": 75,
+          "percentage": 3.0
         }
       ]
     }
@@ -961,28 +961,28 @@
       "totalVotes": 2100,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 1365,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 420,
-          "percentage": 20
+          "votes": 1008,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 882,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 210,
-          "percentage": 10
+          "votes": 147,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 105,
-          "percentage": 5.0
+          "votes": 63,
+          "percentage": 3.0
         }
       ]
     }
@@ -999,28 +999,28 @@
       "totalVotes": 890,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 578,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 178,
-          "percentage": 20
+          "votes": 427,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 373,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 89,
-          "percentage": 10
+          "votes": 62,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 45,
-          "percentage": 5.1
+          "votes": 28,
+          "percentage": 3.1
         }
       ]
     }
@@ -1037,28 +1037,28 @@
       "totalVotes": 2800,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 1820,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 560,
-          "percentage": 20
+          "votes": 1344,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 1176,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 280,
-          "percentage": 10
+          "votes": 196,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 140,
-          "percentage": 5.0
+          "votes": 84,
+          "percentage": 3.0
         }
       ]
     }
@@ -1075,28 +1075,28 @@
       "totalVotes": 1650,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 1072,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 330,
-          "percentage": 20
+          "votes": 792,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 693,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 165,
-          "percentage": 10
+          "votes": 115,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 83,
-          "percentage": 5.0
+          "votes": 50,
+          "percentage": 3.0
         }
       ]
     }
@@ -1113,28 +1113,28 @@
       "totalVotes": 1420,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 923,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 284,
-          "percentage": 20
+          "votes": 681,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 596,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 142,
-          "percentage": 10
+          "votes": 99,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 71,
-          "percentage": 5.0
+          "votes": 44,
+          "percentage": 3.1
         }
       ]
     }
@@ -1151,28 +1151,28 @@
       "totalVotes": 1100,
       "candidates": [
         {
-          "name": "Paul Biya",
-          "party": "RDPC",
-          "votes": 715,
-          "percentage": 65
-        },
-        {
           "name": "Issa Tchiroma",
           "party": "FSNC",
-          "votes": 220,
-          "percentage": 20
+          "votes": 528,
+          "percentage": 48
+        },
+        {
+          "name": "Paul Biya",
+          "party": "RDPC",
+          "votes": 462,
+          "percentage": 42
         },
         {
           "name": "Joshua Osih",
           "party": "SDF",
-          "votes": 110,
-          "percentage": 10
+          "votes": 77,
+          "percentage": 7
         },
         {
           "name": "Cabral Libii",
           "party": "PCRN",
-          "votes": 55,
-          "percentage": 5.0
+          "votes": 33,
+          "percentage": 3.0
         }
       ]
     }

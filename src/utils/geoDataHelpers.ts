@@ -51,7 +51,7 @@ export function extractDepartmentsFromGeoJSON(
   return departmentsInRegion
     .map((feature) => ({
       value: feature.properties?.shapeName || '',
-      label: `${feature.properties?.shapeName || ''} (ID: ${feature.properties?.shapeID || 'N/A'})`,
+      label: feature.properties?.shapeName || '',
     }))
     .filter((opt) => opt.value)
     .sort((a, b) => a.value.localeCompare(b.value));
@@ -85,7 +85,7 @@ export function extractArrondissementsFromGeoJSON(
   return arrondissementsInDepartment
     .map((feature) => ({
       value: feature.properties?.shapeName || '',
-      label: `${feature.properties?.shapeName || ''} (ID: ${feature.properties?.shapeID || 'N/A'})`,
+      label: feature.properties?.shapeName || '',
     }))
     .filter((opt) => opt.value)
     .sort((a, b) => a.value.localeCompare(b.value));

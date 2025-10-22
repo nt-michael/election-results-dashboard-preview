@@ -22,8 +22,8 @@ export default function BreadcrumbNav({
   }
 
   return (
-    <nav className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-6 py-3">
-      <ol className="flex items-center space-x-2 text-sm">
+    <nav className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 !px-4 sm:!px-4 !py-2 sm:!py-2">
+      <ol className="flex items-center flex-wrap !space-x-2 text-xs sm:text-sm">
         {/* Home */}
         <li>
           <button
